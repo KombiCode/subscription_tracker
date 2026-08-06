@@ -10,7 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_06_110959) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_06_114119) do
+  create_table "categories", force: :cascade do |t|
+    t.string "color"
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "providers", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.string "support_email"
+    t.datetime "updated_at", null: false
+    t.string "website"
+  end
+
   create_table "subscriptions", force: :cascade do |t|
     t.string "account_email"
     t.integer "billing_cycle"
