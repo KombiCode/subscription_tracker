@@ -1,0 +1,54 @@
+<div id="<%= dom_id subscription %>" class="w-full sm:w-auto my-5 space-y-5">
+  <div>
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= subscription.name %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Provider:</strong>
+    <%= subscription.provider_id %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Category:</strong>
+    <%= subscription.category_id %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Billing cycle:</strong>
+    <%= subscription.billing_cycle %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Monthly cost:</strong>
+    <%= subscription.monthly_cost %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Currency:</strong>
+    <%= subscription.currency %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Next renewal on:</strong>
+    <%= subscription.next_renewal_on %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Account email:</strong>
+    <%= subscription.account_email %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Mfa enabled:</strong>
+    <%= subscription.mfa_enabled? ? "Yes" : "No" %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Mfa method:</strong>
+    <%= subscription.mfa_method %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Credentials location:</strong>
+    <%= subscription.credentials_location %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Notes:</strong>
+    <%= subscription.notes %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Purpose:</strong>
+    <%= subscription.purpose %>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  provider: one
+  category: one
+  billing_cycle: 1
+  monthly_cost: 9.99
+  currency: 1
+  next_renewal_on: 2026-08-06
+  account_email: MyString
+  mfa_enabled: false
+  mfa_method: MyString
+  credentials_location: MyString
+  notes: MyText
+  purpose: MyString
+
+two:
+  name: MyString
+  provider: two
+  category: two
+  billing_cycle: 1
+  monthly_cost: 9.99
+  currency: 1
+  next_renewal_on: 2026-08-06
+  account_email: MyString
+  mfa_enabled: false
+  mfa_method: MyString
+  credentials_location: MyString
+  notes: MyText
+  purpose: MyString
